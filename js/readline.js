@@ -146,6 +146,7 @@ Josh.Version = "0.2.10";
       },
       activate: function() {
         _active = true;
+        subscribeToKeys();
         if(_onActivate) {
           _onActivate();
         }
